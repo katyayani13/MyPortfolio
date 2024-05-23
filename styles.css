@@ -1,27 +1,45 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-header {
-    text-align: center;
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 50px;
     background-color: #f4f4f4;
+}
+
+.profile {
+    text-align: right;
 }
 
 header img {
     width: 150px;
     border-radius: 50%;
+    display: block;
+    margin-left: auto;
 }
 
 header h1 {
     margin: 10px 0;
 }
 
+.specializations {
+    flex: 1;
+}
+
+.specializations p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
 section {
     padding: 20px;
     margin: 20px;
+    text-align: center;
 }
 
 section h2 {
@@ -31,6 +49,7 @@ section h2 {
 
 .project {
     margin: 10px 0;
+    text-align: center;
 }
 
 .project a {
@@ -48,6 +67,11 @@ footer {
 }
 
 @media (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
     header img {
         width: 100px;
     }
